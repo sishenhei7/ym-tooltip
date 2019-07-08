@@ -1,5 +1,8 @@
 <template>
-  <el-tooltip v-bind="$attrs">
+  <el-tooltip
+    ref="tooltip"
+    v-bind="$attrs"
+  >
     <template slot="content">
       <slot name="content" />
     </template>
@@ -13,15 +16,23 @@ export default {
     window.addEventListener('touchmove', this.hideTip);
     if (this.$el.nodeType === 1) {
       this.$el.classList.add('ym-tooltip');
+      this.$el.addEventListener('click', this.showTip);
     }
   },
   beforeDestroy() {
     window.removeEventListener('touchmove', this.hideTip);
+    this.$el.removeEventListener('click', this.showTip);
   },
   methods: {
+    showTip() {
+      if (this.$refs && this.$refs.tooltip) {
+        this.$refs.tooltip.show();
+      }
+    },
     hideTip() {
-      if (this.$el.blur) {
-        this.$el.blur();
+      if (this.$refs && this.$refs.tooltip) {
+        this.$refs.tooltip.setExpectedState(false);
+        this.$refs.tooltip.handleClosePopper();
       }
     },
   },

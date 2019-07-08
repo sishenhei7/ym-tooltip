@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="LICENSE">
 </a>
 
-`ym-tooltip` is a tooltip component for PC and Mobile based on el-tooltip.
+> `ym-tooltip` is a tooltip component for PC and Mobile based on el-tooltip.
 
 It solves the problem that **the el-tooltips in mobile don't disappear when scroll the screen**.
 
