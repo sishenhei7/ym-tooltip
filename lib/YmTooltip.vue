@@ -1,8 +1,5 @@
 <template>
-  <el-tooltip
-    ref="tooltip"
-    v-bind="$attrs"
-  >
+  <el-tooltip v-bind="$attrs">
     <template slot="content">
       <slot name="content" />
     </template>
