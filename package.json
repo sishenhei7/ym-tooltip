@@ -1,6 +1,6 @@
 {
   "name": "ym-tooltip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "tooltip component for PC and Mobile based on el-tooltip",
   "main": "index.js",
   "scripts": {
