@@ -20,7 +20,7 @@ npm i ym-tooltip -s
 
 ```
 
-Finally, you can use replace el-tooltip by ym-tooltip wherever like this:
+Finally, you can replace el-tooltip by ym-tooltip wherever like this:
 
 ``` js
 // before
