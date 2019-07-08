@@ -1,0 +1,19 @@
+{
+  "name": "ym-tooltip",
+  "version": "1.0.0",
+  "description": "tooltip component for PC and Mobile based on el-tooltip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sishenhei7/ym-tooltip.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sishenhei7/ym-tooltip/issues"
+  },
+  "homepage": "https://github.com/sishenhei7/ym-tooltip#readme"
+}
